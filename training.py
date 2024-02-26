@@ -10,7 +10,7 @@ from keras.activations import softmax
 from keras.callbacks import ModelCheckpoint, TensorBoard
 from keras.layers import Embedding, LSTM, Dense, Bidirectional, Concatenate
 from keras.optimizers import RMSprop
-from keras.utils.np_utils import to_categorical
+from keras.utils import to_categorical
 from keras_preprocessing.sequence import pad_sequences
 from keras_preprocessing.text import Tokenizer
 
@@ -50,7 +50,7 @@ def save_config(key, value):
     with open(path + 'config.json', 'w') as outfile:
         json.dump(data, outfile)
 
-
+# target_regex ='!"#$%&()*+,-./:;<=>?@[\]^_`{|}~\t\n\'0123456789'
 target_regex = '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~\t\n\'0123456789'
 tokenizer = Tokenizer(filters=target_regex, lower=True)
 tokenizer.fit_on_texts(questions_train + answers_train + questions_test + answers_test)
