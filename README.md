@@ -52,12 +52,44 @@ Penggunaan file CSV dengan Pandas
 # Tesnsorflow
 Kerjakan:
 1. Cara instalasi tensorflow
+* Langkah-langkah untuk instalasi tensorflow
+sesuaikan dengan versi pip, jika disuruh untuk di upgrade maka perlu di upgrade dengan perintah berikut.
+```
+pip install --upgrade pip 
+```
+ketika sudah di upgrade maka lankukan install  tensorflow
+```
+pip install tensorflow
+```
+Verifikasi tensorflow berhasil atu gagal
+```
+python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+OR
+py -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+```
+Output gagal(ERROR)
+![alt text](image.png)
+untuk mengatasi prihal error tersebut yaitu dengan perhatikan errornya bahwa di situ untuk optimized to use available CPU.
+bahwa perlu dicek laptopnya ada yang bermasalah.
+
+Output Berhasil - COMING SOON
+
 2. Contoh kode penggunaan tensorflow
 
-# Kerjakan
+# Kerjakan - SOAL
 1. Fork dan Clone kode program yang ada di repo nlp
 2. Jalankan file preprocessing.py kemudian jelaskan per baris dari kode tersebut
 3. Jalankan file training.py kemudian jelaskan per baris dari kode tersebut
 4. Output dari training menghasilkan satu buah model, buatlah kode program python  untuk me load model tersebut kemudian meminta inputan dari user dan outputan dari hasil model
 5. Ukur akurasi dari setiap inputan dan outputan model tersebut kemudian di rekap dalam spreadsheet
 
+## Langkah-langkah Pengerjaan - SOAL
+* Penjelasan definisi sesuai dengan teori yang di sesuaikan oleh Dosen. untuk penjelasan berupa video [hanyadisini]() - VIDEO COMING SOON
+1. Ada dua repo yang dibuat pertama itu membuat repo untuk individu bisa mengatasi error supaya tidak asal push. bisa evaluasi tiap tugasnya hanya[disini](https://github.com/cerdasbuatan/ia)
+Forked and cloned the repository [nlp](https://github.com/mfaisal-Ash/nlp)
+
+2. Sebelum untuk menjalankan file  `preprocessing.py`, pastikan Anda sudah melakukan instalasi module yang dibutuhkan.
+3. Sebelum untuk menjalankan file 'training.py' pastikan sudah proses instalasi yang dibutuhkan udah di selesaikan dan berhasil menjalankan file 'preprocessing.py'. karena di dalam file tersebut ada
+   data yang penting.
+4. Hasilnya - COOMING SOON
+5. - COMING SOON
