@@ -5,8 +5,10 @@
 """
 
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+# from sastrawi.stopword.StopWordFactory import StopWordFactory
 
 import io
+#
 import os
 import re
 import requests

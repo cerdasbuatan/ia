@@ -55,24 +55,32 @@ Kerjakan:
 * Langkah-langkah untuk instalasi tensorflow
 sesuaikan dengan versi pip, jika disuruh untuk di upgrade maka perlu di upgrade dengan perintah berikut.
 ```
-pip install --upgrade pip 
+$ pip install --upgrade pip 
 ```
 ketika sudah di upgrade maka lankukan install  tensorflow
 ```
-pip install tensorflow
+$ pip install tensorflow
 ```
 Verifikasi tensorflow berhasil atu gagal
 ```
-python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+$ python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
 OR
-py -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+$ py -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
 ```
 Output gagal(ERROR)
 ![alt text](image.png)
 untuk mengatasi prihal error tersebut yaitu dengan perhatikan errornya bahwa di situ untuk optimized to use available CPU.
 bahwa perlu dicek laptopnya ada yang bermasalah.
+coba untuk melakukan instalasi nvidia cudnn dengan menggunakan perintah berikut
+```
+$ pip install nvidia-cudnn-cu11==version. 
+```
+* Catatan untuk versi sesuaikan dengan versi dengan yang ada di laptop.
+jika masih error yang sama coba turunkan versi pythonnya yang tadinya versi terbaru 3.12 ke 3.10.11 atau 3.8.6.
+karena kemungkinan versi terbaru python perlu melakukan pengaturan. saya sudah melakukan setting cuda, tapi tetap sama errornya. 
 
-Output Berhasil - COMING SOON
+Output Berhasil -
+Saya 
 
 2. Contoh kode penggunaan tensorflow
 
@@ -80,16 +88,22 @@ Output Berhasil - COMING SOON
 1. Fork dan Clone kode program yang ada di repo nlp
 2. Jalankan file preprocessing.py kemudian jelaskan per baris dari kode tersebut
 3. Jalankan file training.py kemudian jelaskan per baris dari kode tersebut
-4. Output dari training menghasilkan satu buah model, buatlah kode program python  untuk me load model tersebut kemudian meminta inputan dari user dan outputan dari hasil model
+4. Output dari training menghasilkan satu buah model, buatlah kode program python untuk me load model tersebut kemudian meminta inputan dari user dan outputan dari hasil model
 5. Ukur akurasi dari setiap inputan dan outputan model tersebut kemudian di rekap dalam spreadsheet
 
 ## Langkah-langkah Pengerjaan - SOAL
-* Penjelasan definisi sesuai dengan teori yang di sesuaikan oleh Dosen. untuk penjelasan berupa video [hanyadisini]() - VIDEO COMING SOON
-1. Ada dua repo yang dibuat pertama itu membuat repo untuk individu bisa mengatasi error supaya tidak asal push. bisa evaluasi tiap tugasnya hanya[disini](https://github.com/cerdasbuatan/ia)
+* Penjelasan definisi sesuai dengan teori yang di sesuaikan oleh Dosen. untuk penjelasan berupa video [Pembahasan AI - Matkul AI](https://youtu.be/tRdCH8I1DhM) - VIDEO COMING SOON
+1. Ada dua repo yang dibuat pertama itu membuat repo untuk individu bisa mengatasi error supaya tidak asal push. bisa evaluasi tiap tugasnya hanya [disini](https://github.com/cerdasbuatan/ia)
 Forked and cloned the repository [nlp](https://github.com/mfaisal-Ash/nlp)
 
-2. Sebelum untuk menjalankan file  `preprocessing.py`, pastikan Anda sudah melakukan instalasi module yang dibutuhkan.
-3. Sebelum untuk menjalankan file 'training.py' pastikan sudah proses instalasi yang dibutuhkan udah di selesaikan dan berhasil menjalankan file 'preprocessing.py'. karena di dalam file tersebut ada
-   data yang penting.
-4. Hasilnya - COOMING SOON
-5. - COMING SOON
+2. Sebelum untuk menjalankan file  `preprocessing.py`, pastikan Anda sudah melakukan instalasi module yang dibutuhkan. contohnya module pandas.
+3. Sebelum untuk menjalankan file 'training.py' pastikan sudah proses instalasi yang dibutuhkan udah di selesaikan dan berhasil menjalankan file 'preprocessing.py'. karena di dalam file tersebut ada data yang penting. 
+yang perlu di install itu module pandas, module keras_preprocessing, module tensorflow
+perintah-perintah untuk melakukan instalasi module
+```
+$ pip install pandas
+$ pip install  tensorflow
+$ pip install keras_preprocessing
+```
+4. Hasil dari proses running file training akan memunculkan model. - COOMING SOON
+5. Mengukur akurasi dari setiap inputan dan outputan model akan direkap ke dalam spreadsheet- COMING SOON
